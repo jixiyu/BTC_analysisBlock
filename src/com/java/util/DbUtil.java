@@ -8,8 +8,8 @@ import java.sql.ResultSet;
 
 public class DbUtil {
 	private String dbUrl="jdbc:mysql://10.21.238.222/result";//bit_mad  web
-	private String dbUserName="root";
-	private String dbPassword="123456";
+	private String dbUserName="";
+	private String dbPassword="";
 	private String jdbcName="com.mysql.jdbc.Driver";
 	
 	private Connection con = null;
@@ -18,7 +18,7 @@ public class DbUtil {
 	
 	
 	/**
-	 * »ñÈ¡Êý¾Ý¿âÁ¬½Ó
+	 * ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return
 	 * @throws Exception
 	 */
@@ -29,7 +29,7 @@ public class DbUtil {
 	}
 	
 	/**
-	 * ¹Ø±ÕÊý¾Ý¿âÁ¬½Ó
+	 * ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param con
 	 * @throws Exception
 	 */
@@ -61,12 +61,12 @@ public class DbUtil {
 		Connection con=null;
 		try {
 //			dbUtil.getCon();
-			System.out.println("Êý¾Ý¿âÁ¬½Ó³É¹¦");
+			System.out.println("ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ó³É¹ï¿½");
 //			dbUtil.cldbUtil.getCodbUtil.getCon();n();oseCon(con);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("Êý¾Ý¿âÁ¬½ÓÊ§°Ü");
+			System.out.println("ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½");
 		}
 	}
 	
