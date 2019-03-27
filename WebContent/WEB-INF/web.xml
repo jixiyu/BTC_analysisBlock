@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BitCoinEchartV2.0</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>	
+	
+  
+  <!--<servlet>-->
+    <!--<servlet-name>search</servlet-name>-->
+    <!--<servlet-class>com.java.servlet.ServletBlockDifficuty</servlet-class>-->
+   <!--</servlet>-->
+
+   <!--<servlet-mapping>-->
+     <!--<servlet-name>search</servlet-name>-->
+     <!--<url-pattern>/search</url-pattern>-->
+   <!--</servlet-mapping>-->
+   
+   
+   <!-- price and address with time-->
+   <servlet>
+    <servlet-name>price_address</servlet-name>
+    <servlet-class>com.java.servlet.PriceAddress</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>price_address</servlet-name>
+     <url-pattern>/price_address</url-pattern>
+   </servlet-mapping>
+
+   <!--  addnum/tx-->
+   <servlet>
+    <servlet-name>addnumTx</servlet-name>
+    <servlet-class>com.java.servlet.AddnumTx</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addnumTx</servlet-name>
+     <url-pattern>/addnumTx</url-pattern>
+   </servlet-mapping>
+   
+    <!--  difficulty-->
+   <servlet>
+    <servlet-name>difficulty</servlet-name>
+    <servlet-class>com.java.servlet.Difficulty</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>difficulty</servlet-name>
+     <url-pattern>/difficulty</url-pattern>
+   </servlet-mapping>
+   
+   
+   <!--  difficulty norepet-->
+   <servlet>
+    <servlet-name>difficultyNo</servlet-name>
+    <servlet-class>com.java.servlet.DifficultyOnly</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>difficultyNo</servlet-name>
+     <url-pattern>/difficultyNo</url-pattern>
+   </servlet-mapping>
+   
+   
+   <!--  output_price-->
+   <servlet>
+    <servlet-name>outputPrice</servlet-name>
+    <servlet-class>com.java.servlet.OutputPrice</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>outputPrice</servlet-name>
+     <url-pattern>/outputPrice</url-pattern>
+   </servlet-mapping>
+   
+      <!--  output_price_dayly-->
+   <servlet>
+    <servlet-name>outputPriceDayly</servlet-name>
+    <servlet-class>com.java.servlet.OutputPriceDayly</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>outputPriceDayly</servlet-name>
+     <url-pattern>/outputPriceDayly</url-pattern>
+   </servlet-mapping>
+
+    <!--  difficulty rate-->
+   <servlet>
+    <servlet-name>difficultyRate</servlet-name>
+    <servlet-class>com.java.servlet.DifficultyRate</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>difficultyRate</servlet-name>
+     <url-pattern>/difficultyRate</url-pattern>
+   </servlet-mapping>
+   
+   <!--  price addnum per five days-->
+   <servlet>
+    <servlet-name>five</servlet-name>
+    <servlet-class>com.java.servlet.PriceAddnumFive</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>five</servlet-name>
+     <url-pattern>/five</url-pattern>
+   </servlet-mapping>
+   
+   <!--  price addnum rate-->
+   <servlet>
+    <servlet-name>addrRate</servlet-name>
+    <servlet-class>com.java.servlet.PriceAddraddRate</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addrRate</servlet-name>
+     <url-pattern>/addrRate</url-pattern>
+   </servlet-mapping>
+   
+   <!--  price addnum rate per five day-->
+   <servlet>
+    <servlet-name>addrRate5</servlet-name>
+    <servlet-class>com.java.servlet.PriceAddraddRate5</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addrRate5</servlet-name>
+     <url-pattern>/addrRate5</url-pattern>
+   </servlet-mapping>
+   
+   <!--  price addnum rate per ten day-->
+   <servlet>
+    <servlet-name>addrRate10</servlet-name>
+    <servlet-class>com.java.servlet.PriceAddraddRate10</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addrRate10</servlet-name>
+     <url-pattern>/addrRate10</url-pattern>
+   </servlet-mapping>
+   
+   <!--  txCount-->
+   <servlet>
+    <servlet-name>txCount</servlet-name>
+    <servlet-class>com.java.servlet.TxCount</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>txCount</servlet-name>
+     <url-pattern>/txCount</url-pattern>
+   </servlet-mapping>
+   
+   <!--  txCount and address addnum-->
+   <servlet>
+    <servlet-name>txAddress</servlet-name>
+    <servlet-class>com.java.servlet.TxCountAddress</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>txAddress</servlet-name>
+     <url-pattern>/txAddress</url-pattern>
+   </servlet-mapping>
+   
+   <!--  fee and its price-->
+   <servlet>
+    <servlet-name>feePrice</servlet-name>
+    <servlet-class>com.java.servlet.FeePrice</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>feePrice</servlet-name>
+     <url-pattern>/feePrice</url-pattern>
+   </servlet-mapping>
+   
+   <!--  fee and price-->
+   <servlet>
+    <servlet-name>fee_price</servlet-name>
+    <servlet-class>com.java.servlet.FeePrice1</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>fee_price</servlet-name>
+     <url-pattern>/fee_price</url-pattern>
+   </servlet-mapping>
+   
+    <!--  fee/txcount per day and price-->
+   <servlet>
+    <servlet-name>feeTx_price</servlet-name>
+    <servlet-class>com.java.servlet.FeePerTxPrice</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>feeTx_price</servlet-name>
+     <url-pattern>/feeTx_price</url-pattern>
+   </servlet-mapping>
+   
+   <!--  reward-->
+   <servlet>
+    <servlet-name>reward</servlet-name>
+    <servlet-class>com.java.servlet.Reward</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>reward</servlet-name>
+     <url-pattern>/reward</url-pattern>
+   </servlet-mapping>
+   
+   <!-- address addnum -->
+   <servlet>
+    <servlet-name>addnum</servlet-name>
+    <servlet-class>com.java.servlet.AddressAddNum</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addnum</servlet-name>
+     <url-pattern>/addnum</url-pattern>
+   </servlet-mapping>
+   
+     <!-- address all -->
+   <servlet>
+    <servlet-name>addressAll</servlet-name>
+    <servlet-class>com.java.servlet.AddressAll</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>addressAll</servlet-name>
+     <url-pattern>/addressAll</url-pattern>
+   </servlet-mapping>
+   
+   <!-- reward and price -->
+   <servlet>
+    <servlet-name>rewardPrice</servlet-name>
+    <servlet-class>com.java.servlet.RewardPrice</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>rewardPrice</servlet-name>
+     <url-pattern>/rewardPrice</url-pattern>
+   </servlet-mapping>
+   
+    <!-- txCount and price -->
+   <servlet>
+    <servlet-name>txCountPrice</servlet-name>
+    <servlet-class>com.java.servlet.TxCountPrice</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>txCountPrice</servlet-name>
+     <url-pattern>/txCountPrice</url-pattern>
+   </servlet-mapping>
+   
+   <!-- block size -->
+   <servlet>
+    <servlet-name>size</servlet-name>
+    <servlet-class>com.java.servlet.Size</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>size</servlet-name>
+     <url-pattern>/size</url-pattern>
+   </servlet-mapping>
+   
+   
+   <!-- address addnum -->
+   <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>com.java.servlet.AddrAdd</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>add</servlet-name>
+     <url-pattern>/add</url-pattern>
+   </servlet-mapping>
+
+</web-app>
